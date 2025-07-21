@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>John Doe | Aspiring Cybersecurity Analyst</title>
+	<style>
+		/* Base Styles */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #121212;
+			color: #e0e0e0;
+			line-height: 1.6;
+		}
+
+		a {
+			color: #64ffda;
+			text-decoration: none;
+		}
+
+		header,
+		section,
+		footer {
+			padding: 60px 20px;
+			max-width: 1000px;
+			margin: auto;
+		}
+
+		/* Hero Section */
+		.hero {
+			text-align: center;
+			padding-top: 100px;
+		}
+
+		.hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.hero h2 {
+			color: #64ffda;
+			margin-top: 10px;
+			font-size: 1.5rem;
+		}
+
+		.hero p {
+			margin-top: 10px;
+			font-style: italic;
+			color: #aaa;
+		}
+
+		/* Section Headings */
+		h3.section-title {
+			font-size: 1.8rem;
+			margin-bottom: 20px;
+			border-bottom: 2px solid #64ffda;
+			display: inline-block;
+		}
+
+		/* About */
+		.about p {
+			max-width: 700px;
+			margin-bottom: 20px;
+		}
+
+		/* Skills */
+		.skills-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		.skill {
+			background-color: #1f1f1f;
+			padding: 10px 15px;
+			border-radius: 5px;
+		}
+
+		/* Projects */
+		.project {
+			background-color: #1e1e1e;
+			padding: 20px;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+
+		.project h4 {
+			margin-bottom: 10px;
+			color: #64ffda;
+		}
+
+		.project p {
+			margin-bottom: 8px;
+		}
+
+		/* Certifications & Education */
+		.certs-edu ul {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		.certs-edu li {
+			margin-bottom: 10px;
+		}
+
+		/* Resume */
+		.resume-btn {
+			display: inline-block;
+			background-color: #64ffda;
+			color: #000;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+
+		.resume-btn:hover {
+			background-color: #52e0c4;
+		}
+
+		/* Contact */
+		.contact p {
+			margin-bottom: 10px;
+		}
+
+		.linkedin-btn {
+			display: inline-block;
+			background-color: #0077b5;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-weight: bold;
+		}
+
+		.linkedin-btn:hover {
+			background-color: #005983;
+		}
+
+		/* Footer */
+		footer {
+			text-align: center;
+			font-size: 0.9rem;
+			border-top: 1px solid #333;
+			padding-top: 20px;
+			color: #777;
+		}
+
+		/* Responsive */
+		@media (max-width: 600px) {
+			.hero h1 {
+				font-size: 2rem;
+			}
+
+			.hero h2 {
+				font-size: 1.2rem;
+			}
+
+			h3.section-title {
+				font-size: 1.5rem;
+			}
+
+			.skills-list {
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Hero / Intro -->
+	<header class="hero">
+		<h1>Monty Dennis</h1>
+		<h2>Cybersecurity Analyst</h2>
+		<p>Protecting systems, one packet at a time.</p>
+	</header>
+
+	<!-- About Me -->
+	<section class="about">
+		<h3 class="section-title">About Me</h3>
+		<p>I’m an entry-level cybersecurity professional with a strong passion for incident response and digital defense. With a background in IT fundamentals and hands-on experience in virtual labs, I thrive on identifying threats, analyzing breaches, and supporting effective containment strategies. My focus is on building the skills necessary to detect, investigate, and mitigate security incidents in real time.
+			<br>
+
+			<br>I’ve developed proficiency in tools like Wireshark, Splunk, and Kali Linux, and I’m actively honing my skills in log analysis, malware detection, and SIEM technologies. I’ve also earned my CompTIA Security+ certification and regularly participate in platforms like TryHackMe and Hack The Box to sharpen my practical knowledge.
+			<br>
+
+			<br>My goal is to join a collaborative security team where I can contribute to protecting systems, learning from real-world incidents, and continuously growing as a threat responder. I bring curiosity, attention to detail, and a commitment to staying current in a rapidly evolving field.
+		</p>
+	</section>
+
+	<!-- Skills -->
+	<section class="skills">
+		<h3 class="section-title">Skills</h3>
+		<div class="skills-list">
+			<div class="skill">Network Security</div>
+			<div class="skill">Python</div>
+			<div class="skill">Wireshark</div>
+			<div class="skill">SIEM Tools</div>
+			<div class="skill">Linux</div>
+			<div class="skill">AWS</div>
+			<div class="skill">Nmap</div>
+			<div class="skill">Threat Analysis</div>
+		</div>
+	</section>
+
+	<!-- Projects -->
+	<section class="projects">
+		<h3 class="section-title">Projects</h3>
+		<div class="project">
+			<h4>SIEM Dashboard Simulation</h4>
+			<p>A live dashboard platform that ingests simulated network and endpoint logs, enabling automated threat hunting, alert triage, and SOC-style workflows.</p>
+			<p><strong>Tools:</strong> Kali Linux, Nmap, ELK</p>
+			<p><a target="_blank" href="https://github.com/MontyD99/HomeLab/blob/main/IMG_0041.png">GitHub / Img</a> <br> <a target="_blank" href="https://github.com/MontyD99/HomeLab/blob/main/IMG_0043.png">GitHub / Img</a></p>
+		</div>
+
+
+		<div class="project">
+			<h4>TryHackMe SOC Level 2 Learning Path</h4>
+			<p>Deep-dive log analysis, detection engineering, threat hunting, incident response, and malware analysis using Splunk, Elastic Stack, Sysmon, Windows/Linux event logs, and MITRE ATT&CK strategies.</p>
+			<br /><a target="_blank" href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XGJNP1JYMT.png">TryHackMe – SOC 2</a></strong>
+		</div>
+		<div class="project">
+			<h4>HTB Academy Security Analyst (SOC Analyst) Learning Path</h4>
+			<p>Built defensive capabilities through incident handling, SIEM monitoring (Splunk & Elastic), Windows event/Sysmon and network traffic analysis, threat hunting, and DFIR workflows.</p>
+			<br /><strong><a target="_blank" href="https://academy.hackthebox.com/achievement/badge/a40c9ec7-2f10-11ef-b18d-bea50ffe6cb4">HackTheBox - SOC Badge of Completion</a></strong>
+		</div>
+
+	</section>
+
+	<!-- Certifications & Education -->
+	<section class="certs-edu">
+		<h3 class="section-title">Certifications & Education</h3>
+		<ul>
+			<li><strong><a target="_blank" href="https://www.credly.com/badges/39799917-662b-4507-88da-26ad1325559a/public_url">CompTIA A+</a></strong> – 2023</li>
+			<li><strong><a target="_blank" href="https://www.credly.com/badges/6d3fb183-2401-4198-bb11-77bce77de7dc/public_url">CompTIA Network+</a></strong> – 2023</li>
+			<li><strong><a target="_blank" href="https://www.credly.com/badges/401f7026-deac-4ad1-8e85-576e72b6d7a6/public_url">CompTIA Security+</a></strong> - 2023</li>
+			<li><strong><a target="_blank" href="https://www.credly.com/badges/13777852-ec79-4047-91b9-d846cd4c51a5/public_url">Splunk Core Certified Power User</a></strong> - 2024</li>
+			<br>
+
+			<li><strong>B.S. Computer Science, <br>Concentration in Cyber Security <br><i>(Expected. 2026)</i></strong></li>
+		</ul>
+	</section>
+
+	<!-- Resume -->
+	<section class="resume">
+		<h3 class="section-title">Resume</h3>
+		<a class="resume-btn" href="#" target="_blank">Download My Resume</a>
+	</section>
+
+	<!-- Contact Me -->
+	<section class="contact">
+		<h3 class="section-title">Contact Me</h3>
+		<p>Email: <a href="mailto:john.doe@example.com">montyd37@gmail.com</a></p>
+		<a class="linkedin-btn" href="https://www.linkedin.com/in/monty-dennis-6a9a40301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Connect on LinkedIn</a>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2025 Monty Dennis. All rights reserved.</p>
+	</footer>
+
+</body>
+
+</html>
